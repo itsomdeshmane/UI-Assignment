@@ -1,0 +1,111 @@
+$font-family:"'Barlow Condensed', 400, 'Barlow Condensed', 700, sans-serif";
+$spacing: 9px;
+$fullwidth:100%;
+$primarycolor:#113F91;
+$secondarycolor:#fff;
+$danger: red;
+$h1-size: 2.4rem;
+$subHeadingSize: 1.5rem;
+
+*{
+    font-family:$font-family;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $spacing;
+    max-width: 28rem;
+    margin: auto;
+
+    .btn-primary{
+        background-color: $primarycolor;
+    }
+
+    .heading{
+        color: $primarycolor;
+    }
+    
+    .form-group{
+        display: flex;
+        flex-direction: column;
+        width: $fullwidth;
+        margin: 4px;
+    }
+    
+    .txt-daner{
+        color:$danger;
+    }
+    
+    .wrap-row{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .form-control{
+        border-radius: 8px;
+    }
+}
+
+.card-wrapper{
+    margin: auto;
+    padding: $spacing * 2;
+    color: $secondarycolor;
+    background-image: linear-gradient(#7555CE,#8C9CF7);
+    max-width: 32rem;
+    border-radius: 12px;
+    .card-head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;   
+        align-items: center;      
+    }
+    .img {
+        border:4px solid $secondarycolor;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        object-fit: cover;
+    }
+    .right-icons{
+        display: flex;
+        justify-content: space-between;
+        .icon{
+            padding: $spacing/2;
+            font-size: $spacing*4;
+        }
+    }
+    .heading-h1{
+        font-size: $h1-size;
+        font-weight: 550;
+    }
+    .sub-heading{
+        font-size: $subHeadingSize;
+        font-weight: 550;
+    }
+
+    .img-sm {
+        border:4px solid $secondarycolor;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        object-fit: cover;
+    }
+
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start; 
+        h3{
+           color: #FFFFFF80;
+        }
+    }
+    .play-btn{
+        padding: $spacing;
+        border-radius: $spacing;
+        background-color: #2A282FCC;
+    }
+}
+
